@@ -1,0 +1,191 @@
+/* #root{
+  height: 100vh;
+} */
+
+
+.barralateral{
+  height: calc("100vh - 60px") ;
+}
+.navbar{
+  background-color: #0597F2;
+  height: 60px;
+  /* width: 100vw; */
+}
+.input-group{
+  margin-right: 120px;
+  
+}
+.col-auto{
+  margin-right: 15px;
+}
+.form-control{
+  height: 35px;
+  margin-bottom: 10px;
+}
+.list-group-item.list-group-item-action{
+  background-color: #0597F2;
+  color: white;
+}
+
+.container{
+  width: 100vw;
+  
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.cargas{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+
+}
+.iconcarga{
+  margin-left: 5px;
+  color: #F28705;
+}
+.iconcarga1{
+  margin-left: 5px;
+  color: #F28705;
+  border: 0;
+  background-color: white;
+  
+}
+.iconcarga2{
+  margin-left: 5px;
+  color: #F28705;
+}
+.texto{
+  font-size: 18px;
+  color: #F28705;
+  padding: 0;
+}
+.cargamasiva{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.agregarcargo{
+  margin-top: 20px;
+}
+
+.textosituacion{
+  display: flex;
+  flex-direction: row;
+}
+.form-check-label{
+  margin-right: 10px;
+}
+.form-check-label:nth-child(2){
+  margin-left: 5px;
+}
+.boditablalistapruebas{
+  padding: 2px 0 !important;
+  /* margin: 0 !important; */
+}
+.tbody{
+  font-size: 14px;
+  
+}
+
+.botoncargamasiva{
+
+  border: 0;
+  background-color: #fff;
+}
+
+.modal{
+  position: fixed;
+  z-index: 999;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.modalcontainereditar{
+  position: relative;   
+  width: 800px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.espacioprueba{
+  padding-left: 5px;
+}
+.editarboton{
+  height: 27px;
+}
+.editartexto{
+  font-size: 10px;
+}
+
+.modal.is-open{
+  display: flex;
+}
+.modal-container{
+  position: relative;   
+  width: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  
+}
+.modal-close{
+  border: 0;
+  background-color: #fff;
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+}
+
+.iconCerrar{
+  color: #fff;
+  border: 0;
+  background-color: #F28705;
+}
+.modal-header{
+  display: flex;
+  color: white;
+  height: 50px;
+  background-color: #F28705;
+}
+.modal-body{
+  padding: 0;
+  margin-top: 0;
+}
+.toast-body{
+  border: 1px dashed;
+  padding: 100px;
+  background-color: hsla(0, 6%, 94%, 0.842);
+}
+.textocuerpo2{
+  display: flex;
+  font-size: 10px;
+  margin-top: 5px;
+  align-items: center;
+}
+.iconExcel{
+  margin-left: 10px;
+  color: green;
+}
+.textocuerpo1{
+ font-size: 14px;
+ 
+}
+.form-check-input[type=checkbox]{
+  width: 1.4em;
+  height: 1.4em;
+  
+  
+}
+.form-check-input:checked{
+  background-color: #F28705 !important; 
+  border-color: #F28705 !important; 
+}
