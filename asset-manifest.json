@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-plataforma/static/css/main.40eb8aae.chunk.css",
+    "main.js": "/react-plataforma/static/js/main.f9125d27.chunk.js",
+    "main.js.map": "/react-plataforma/static/js/main.f9125d27.chunk.js.map",
+    "runtime-main.js": "/react-plataforma/static/js/runtime-main.a21a3321.js",
+    "runtime-main.js.map": "/react-plataforma/static/js/runtime-main.a21a3321.js.map",
+    "static/css/2.383c0125.chunk.css": "/react-plataforma/static/css/2.383c0125.chunk.css",
+    "static/js/2.4d28f0a4.chunk.js": "/react-plataforma/static/js/2.4d28f0a4.chunk.js",
+    "static/js/2.4d28f0a4.chunk.js.map": "/react-plataforma/static/js/2.4d28f0a4.chunk.js.map",
+    "static/js/3.2f58d74f.chunk.js": "/react-plataforma/static/js/3.2f58d74f.chunk.js",
+    "static/js/3.2f58d74f.chunk.js.map": "/react-plataforma/static/js/3.2f58d74f.chunk.js.map",
+    "index.html": "/react-plataforma/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/react-plataforma/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.40eb8aae.chunk.css.map": "/react-plataforma/static/css/main.40eb8aae.chunk.css.map",
+    "static/js/2.4d28f0a4.chunk.js.LICENSE.txt": "/react-plataforma/static/js/2.4d28f0a4.chunk.js.LICENSE.txt",
+    "static/media/fondo1.8640a2e1.png": "/react-plataforma/static/media/fondo1.8640a2e1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a21a3321.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.4d28f0a4.chunk.js",
+    "static/css/main.40eb8aae.chunk.css",
+    "static/js/main.f9125d27.chunk.js"
+  ]
+}
