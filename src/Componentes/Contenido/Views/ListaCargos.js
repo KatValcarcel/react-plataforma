@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import EditarPruebas from "../Perfiles/Tabla/EditarPruebas";
 import Situacion from "../Perfiles/Tabla/Situacion";
 import { LinkCargos } from "../Services/LinkCargos";
-import CrearCargoView from "./CrearCargoView";
-
+import { Link } from "react-router-dom";
+import ModalCargaMasiva from "../Perfiles/CargaMasiva/ModalCargaMasivaEditar";
 
 export default function ListaCargos() {
   const [cargos, setCargos] = useState([]);
@@ -21,7 +21,7 @@ export default function ListaCargos() {
 
   return (
     <div>
-        {/* <CrearCargoView></CrearCargoView> */}
+        
       {/* <h1>Pruebas Utilizadas</h1> */}
       <table className="table ">
         <thead className="thead">
@@ -31,11 +31,11 @@ export default function ListaCargos() {
             <th>Área</th>
             <th>Situación</th>
             <th>Pruebas</th>
-            <th>Eliminar</th>
+            <th>Editar</th>
           </tr>
         </thead>
         <tbody>
-          {cargos.map(({ Cargo, Area }, i) => (
+          {cargos.map(({ Cargo, Area, id }, i) => (
             <tr key={i} >
               
               <td className="boditablalistapruebas"><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/></td>
@@ -43,7 +43,7 @@ export default function ListaCargos() {
               <td className="boditablalistapruebas">{Area}</td>
               <td className="boditablalistapruebas">   <Situacion></Situacion>      </td>
               <td className="boditablalistapruebas"><EditarPruebas></EditarPruebas></td>
-              <td className="boditablalistapruebas">          </td>
+              <td className="boditablalistapruebas">  <Link className="btn btn-info" to={`/editarcargo/${id}`}>Editar</Link>        </td>              
             </tr>
           ))}
         </tbody>

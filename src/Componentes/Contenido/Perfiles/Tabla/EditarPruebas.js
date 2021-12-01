@@ -17,13 +17,13 @@ export default function EditarPruebas() {
           <div className="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              className="btn btn-secondary"
               data-bs-dismiss="modal"
               onClick={closeModal4}
             >
               Cancelar
             </button>
-            <button type="button" class="btn btn-primary">
+            <button type="button" className="btn btn-primary">
               Aceptar
             </button>
           </div>

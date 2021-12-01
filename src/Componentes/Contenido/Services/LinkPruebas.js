@@ -1,7 +1,7 @@
 import axios from "axios";
 // Con el axios podremos hacer peticiones a servidores externos, suele usarse para BackEnd. Con esto traeremos la lista de información desde mockAPI
 
-const URL ="https://616b5eb216c3fa0017171680.mockapi.io/cargos"
+const URL ="https://616b5eb216c3fa0017171680.mockapi.io/pruebas"
 
 //este apunta a cargos, pero va a apuntar a editar pruebas, hay que cambiarlo posteriormente.
 

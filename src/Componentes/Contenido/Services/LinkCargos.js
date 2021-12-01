@@ -25,4 +25,12 @@ const crearCargo = async (nuevoCargo) =>{
     }
 }
 
-export { LinkCargos, crearCargo}
+const obtenerCargoPorId = async (id) => {
+    try {
+        const {data} = await axios.get(`${URL}/${id}`)  //2. Devueve la información de un solo producto.
+        return data
+    } catch (error) {
+        throw error
+    }
+}
+export { LinkCargos, crearCargo, obtenerCargoPorId}

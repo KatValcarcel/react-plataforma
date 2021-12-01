@@ -5,7 +5,7 @@ export default function Head() {
    
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark col-12">
       <div className="container-fluid">
         {/* BOTON OFFCANVAS */}
         <button
@@ -21,7 +21,7 @@ export default function Head() {
 
         {/* END BOTON OFFCANVAS */}
         <a className="navbar-brand me-auto" href="./index.html">
-            <img class="logo" src="/img/logo.png" alt="" />
+            <img className="logo" src="/img/logo.png" alt="" />
         </a>
         <button
           className="navbar-toggler"
@@ -68,7 +68,7 @@ export default function Head() {
 
           {/* MENSAJE */}
           <ul className="navbar-nav mb-2 mb-lg-0">
-            <a href>
+            <a href="/">
               <i className=" icon-navbar bi bi-envelope-fill text-white" />
             </a>
           </ul>
@@ -79,7 +79,7 @@ export default function Head() {
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="/"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -92,12 +92,12 @@ export default function Head() {
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/" alt="Mi Perfil">
                     Mi Perfil
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/" alt="">
                     Tema
                   </a>
                 </li>
@@ -105,7 +105,7 @@ export default function Head() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/" alt="">
                     Cerrar sesión
                   </a>
                 </li>

@@ -10,7 +10,7 @@ const CargaMasiva = () => {
       width="20"
       height="20"
       fill="currentColor"
-      class="bi bi-plus-circle"
+      className="bi bi-plus-circle"
       viewBox="0 0 16 16"
     >
       <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -24,7 +24,7 @@ const CargaMasiva = () => {
       width="25"
       height="25"
       fill="currentColor"
-      class="bi bi-file-excel-fill"
+      className="bi bi-file-excel-fill"
       viewBox="0 0 16 16"
     >
       <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5.884 4.68 8 7.219l2.116-2.54a.5.5 0 1 1 .768.641L8.651 8l2.233 2.68a.5.5 0 0 1-.768.64L8 8.781l-2.116 2.54a.5.5 0 0 1-.768-.641L7.349 8 5.116 5.32a.5.5 0 1 1 .768-.64z" />
@@ -50,24 +50,24 @@ const CargaMasiva = () => {
             </p>
           </div>
           <div className="toast-body">
-            <input class="form-control" type="file" id="formFile" />
+            <input className="form-control" type="file" id="formFile" />
           </div>
           <div>
             <p className="textocuerpo2">
               Descargue el formato de carga masiva Aquí
-              <div className="iconExcel">{iconExcel}</div>
+              <span className="iconExcel">{iconExcel}</span>
             </p>
           </div>
           <div className="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              className="btn btn-secondary"
               data-bs-dismiss="modal"
               onClick={closeModal1}
             >
               Cancelar
             </button>
-            <button type="button" class="btn btn-primary">
+            <button type="button" className="btn btn-primary">
               Aceptar
             </button>
           </div>

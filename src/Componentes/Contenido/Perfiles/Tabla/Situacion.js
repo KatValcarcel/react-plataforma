@@ -3,15 +3,16 @@ import React from "react";
 export default function Situacion() {
   return (
     <div className="textosituacion">
-      <label class="form-check-label" for="flexSwitchCheckDefault">Inactivo</label>
-      <div class="form-check form-switch">
+      {/* en el label, de for iba for="flexSwitchCheckDefault"  en los 2 label.*/}
+      <label className="form-check-label" >Inactivo</label>  
+      <div className="form-check form-switch">
         <input
-          class="form-check-input"
+          className="form-check-input"
           type="checkbox"
           role="switch"
           id="flexSwitchCheckDefault"
         />
-        <label class="form-check-label" for="flexSwitchCheckDefault">Activo</label>
+        <label className="form-check-label" >Activo</label>
       </div>
     </div>
   );

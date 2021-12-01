@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import EditarPruebas from "../Perfiles/Tabla/EditarPruebas";
-import Situacion from "../Perfiles/Tabla/Situacion";
 import { LinkPruebas } from "../Services/LinkPruebasEditar";
 
 export default function ListaPruebasEditar() {
@@ -19,7 +17,6 @@ export default function ListaPruebasEditar() {
 
   return (
     <div>
-      {/* <h1>Pruebas Utilizadas</h1> */}
       <table className="table ">
         <thead className="thead ">
           <tr>

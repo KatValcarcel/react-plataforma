@@ -1,4 +1,4 @@
-export default function FormCargo({ value, actualizarInput, manejarSubmit, onClick }) {
+export default function FormCargo({ value, actualizarInput, manejarSubmit }) {
 
   console.log(value);
   return (
@@ -33,14 +33,7 @@ export default function FormCargo({ value, actualizarInput, manejarSubmit, onCli
           />
         </div>
           <div className="modal-footer">
-          {/* <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-              onClick={onClick}
-            >
-              Cancelar
-            </button> */}
+         
                 <button className="btn btn-primary" type="submit">
                   Guardar
                 </button>

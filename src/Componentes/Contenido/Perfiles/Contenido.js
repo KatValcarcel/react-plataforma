@@ -4,15 +4,13 @@ import CargaCargo from "./CargaCargo/CargaCargo";
 import CargaArea from "./CargaArea/CargaArea";
 
 export default function Contenido() {
- 
-
   const iconBuscar = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="25"
       height="25"
       fill="currentColor"
-      class="bi bi-search"
+      className="bi bi-search"
       viewBox="0 0 16 16"
     >
       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -22,11 +20,11 @@ export default function Contenido() {
   return (
     <div className="col-10">
       <div className="cargas">
-        <div className="cargamasiva">
+        <div className="cargamasiva col-8">
           <CargaMasiva></CargaMasiva>
         </div>
 
-        <div className="cargamasiva">
+        <div className="cargamasiva col-2">
           <CargaArea></CargaArea>
         </div>
       </div>
@@ -38,7 +36,9 @@ export default function Contenido() {
       <div className="cargamasiva agregarcargo">
         <CargaCargo></CargaCargo>
       </div>
-      <Tabla></Tabla>
+      <div className="col-11">
+        <Tabla></Tabla>
+      </div>
     </div>
   );
 }
