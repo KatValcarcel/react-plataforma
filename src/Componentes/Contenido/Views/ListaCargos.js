@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import EditarPruebas from "../Perfiles/Tabla/EditarPruebas";
 import Situacion from "../Perfiles/Tabla/Situacion";
-import { LinkCargos } from "../Services/LinkCargos";
+import { eliminarCargo, LinkCargos } from "../Services/LinkCargos";
 import { Link } from "react-router-dom";
-import ModalCargaMasiva from "../Perfiles/CargaMasiva/ModalCargaMasivaEditar";
+import Swal from "sweetalert2";
+import ReactHTMLTableToExcel from "react-html-table-to-excel"
+
 
 export default function ListaCargos() {
   const [cargos, setCargos] = useState([]);
@@ -17,13 +19,47 @@ export default function ListaCargos() {
     }
   };
 
+  const verificarEliminar = async (id) => {
+    const respuesta = await Swal.fire({
+        icon: "warning",
+        title: "Desea eliminar el cargo?",
+        text: "Esta acción es irreversible",
+        showConfirmButton: true,
+        showDenyButton: true,
+        confirmButtonText: "Sí, Eliminar",
+        denyButtonText: "No, Cancelar",
+    });
+    if (respuesta.isConfirmed) {
+        //si es que el usuario ha confirmado
+        try {
+            await eliminarCargo(id);
+            await Swal.fire({
+                icon: "success",
+                title: "Cargo eliminado!",
+            });
+            getCargos();
+        } catch (error) {
+            console.log(error);
+        }
+    }
+};
+
   useEffect(() => {getCargos()}, []);
 
   return (
     <div>
-        
+        <div align="center">
+          <ReactHTMLTableToExcel
+          id="botonExportarExcel"
+          className="btn btn-success"
+          table="tablacargos"
+          filename="Lista_de_Cargos"
+          sheet="Página1"
+          buttonText="Exportar a Excel"
+          />
+        </div> 
       {/* <h1>Pruebas Utilizadas</h1> */}
-      <table className="table ">
+      <table className="table " id="tablacargos">
         <thead className="thead">
           <tr>
             <th>#</th>
@@ -31,7 +67,7 @@ export default function ListaCargos() {
             <th>Área</th>
             <th>Situación</th>
             <th>Pruebas</th>
-            <th>Editar</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
@@ -43,7 +79,7 @@ export default function ListaCargos() {
               <td className="boditablalistapruebas">{Area}</td>
               <td className="boditablalistapruebas">   <Situacion></Situacion>      </td>
               <td className="boditablalistapruebas"><EditarPruebas></EditarPruebas></td>
-              <td className="boditablalistapruebas">  <Link className="btn btn-info" to={`/editarcargo/${id}`}>Editar</Link>        </td>              
+              <td className="boditablalistapruebas">  <Link className="btn btn-info" to={`/editarcargo/${id}`}>Editar</Link>  <button className="btn btn-danger" onClick={()=>{verificarEliminar(id)}}>Eliminar</button>      </td>              
             </tr>
           ))}
         </tbody>

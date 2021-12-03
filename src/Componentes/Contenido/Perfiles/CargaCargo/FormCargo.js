@@ -1,6 +1,5 @@
 export default function FormCargo({ value, actualizarInput, manejarSubmit }) {
-
-  console.log(value);
+  // console.log(value);
   return (
     <div>
       <form
@@ -32,12 +31,11 @@ export default function FormCargo({ value, actualizarInput, manejarSubmit }) {
             }}
           />
         </div>
-          <div className="modal-footer">
-         
-                <button className="btn btn-primary" type="submit">
-                  Guardar
-                </button>
-            </div>  
+        <div className="modal-footer">
+          <button className="btn btn-primary" type="submit">
+            Guardar
+          </button>
+        </div>
       </form>
     </div>
   );

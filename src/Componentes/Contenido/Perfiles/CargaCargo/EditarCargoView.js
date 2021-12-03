@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
-import { useParams } from "react-router"
+import { useNavigate } from "react-router"
 import FormCargo from "./FormCargo"
-import { obtenerCargoPorId } from "../../Services/LinkCargos";
-
+import { obtenerCargoPorId, editarCargoPorId } from "../../Services/LinkCargos";
+import Swal from "sweetalert2";
+import { useParams } from "react-router";
 
 export default function EditarCargoView() {
     const [value, setValue] = useState({
@@ -11,7 +12,7 @@ export default function EditarCargoView() {
       });
 
     const { id } = useParams() //1. con esto obtenemos el id de la url (mockAPI)
-      console.log({ id })
+      const navigate = useNavigate()  //añadido clase 10 dia 3.
 
     const getCargo = async () =>{
         try {
@@ -22,14 +23,42 @@ export default function EditarCargoView() {
             console.log(error)
         }
     }
+        
+    // añadido en clase 10 dia 3
+    const manejarSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            await editarCargoPorId(id, value)
+            await Swal.fire({
+                icon: "success",
+                title: "Éxito",
+                text: "Cargo editado exitosamente",
+            })
+            navigate("/perfiles");
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const actualizarInput = (e) => {
+        console.log(e.target.name, e.target.value)
+        setValue({
+            ...value, //tomando todo el value, spreadoperator
+            [e.target.name]: e.target.value
+        })
+    }
+    
+    // Aqui acaba la semana 10 dia 3
+
+
     useEffect(()=>{
         getCargo() //3. Ejecutamos con un useEffect, con ello llamamos a la función que me trae un cargo por su ID
 
     },[])
     return (
         <div>
-       
-           <FormCargo value={value}/>
+            {/* actualizarInput y manejarSubmit es del clase 10 dia 3 */}
+           <FormCargo value={value} actualizarInput={actualizarInput} manejarSubmit={manejarSubmit}/> 
         </div>
     )
 }

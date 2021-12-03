@@ -33,4 +33,34 @@ const obtenerCargoPorId = async (id) => {
         throw error
     }
 }
-export { LinkCargos, crearCargo, obtenerCargoPorId}
+
+
+// Esto es clase 10 dia 3 resumen
+
+
+const editarCargoPorId = async (id, objCargo) => {
+    try {
+        const headers = {
+            "Content-Type": "application/json",
+        };
+        await axios.put(`${URL}/${id}`, objCargo, { headers });
+        return; //resolve
+    } catch (error) {
+        throw error;
+    }
+};
+
+
+const eliminarCargo = async (id) => {
+    try {
+        await axios.delete(`${URL}/${id}`);
+        return "Cargo eliminado";
+    } catch (error) {
+        throw error;
+    }
+};
+
+// aqui concluye la clase 10 dia 3 resumen
+
+
+export { LinkCargos, crearCargo, obtenerCargoPorId, editarCargoPorId, eliminarCargo }

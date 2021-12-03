@@ -19,6 +19,9 @@ const CargaCargo = () => {
     </svg>
   );
 
+  //crees un contexto que sirva para ver si creas o editas
+  //cuando des click a crear o editar cambies el estado del contexto
+
   return (
     <div>
       <div className="cargamasiva">
@@ -33,7 +36,7 @@ const CargaCargo = () => {
           <div>
             <CrearCargoView></CrearCargoView>
           </div>
-
+          {/**contextoOperacion === "crear" ? (Modal de crear) : (EditarCargoView propid)*/}
           <div >
             <button
               type="button"
