@@ -16,6 +16,8 @@ import LoginView from "./Componentes/Context/LoginView";
 import CheckOutView from "./Componentes/Context/CheckOutView";
 import Navegacion from "./Componentes/Context/Navegacion";
 import PrivateRoute from "./Componentes/Context/PrivateRoute";
+import EnviosView from "./Componentes/Contenido/Views/EnviosView";
+
 
 // import CargaMasiva from "./Componentes/Contenido/Perfiles/CargaMasiva/CargaMasiva";
 
@@ -32,11 +34,15 @@ function App() {
             <Route path="/" element={ <Intro/>} />
             
               <Route path="/login" element={<LoginView/>} />
-              <Route path="/bienvenida" element={<PrivateRoute><BarraLateral/><Bienvenida/></PrivateRoute>} />
-              <Route path="/perfiles" element={<PrivateRoute><BarraLateral/><Contenido/></PrivateRoute>} />
-              <Route path="/listapruebas" element={<PrivateRoute><BarraLateral/><ListaPruebas/></PrivateRoute>} />
-              <Route path="/listacargos" element={<PrivateRoute><BarraLateral/><ListaCargos/></PrivateRoute>} />
-              <Route path="/resultados" element={<PrivateRoute><BarraLateral/><Resultados/></PrivateRoute>} />
+              <Route  path="/bienvenida" element={<PrivateRoute><BarraLateral/><Bienvenida/></PrivateRoute>} />
+              <Route  path="/perfiles" element={<PrivateRoute><BarraLateral/><Contenido/></PrivateRoute>} />
+              <Route  path="/listapruebas" element={<PrivateRoute><BarraLateral/><ListaPruebas/></PrivateRoute>} />
+              <Route  path="/listacargos" element={<PrivateRoute><BarraLateral/><ListaCargos/></PrivateRoute>} />
+              <Route  path="/resultados" element={<PrivateRoute><BarraLateral/><Resultados/></PrivateRoute>} />
+              <Route path="/envios" element={<PrivateRoute><BarraLateral/><EnviosView/></PrivateRoute>} />
+
+              
+
 {/* 
               <Route path="/bienvenida" element={<Bienvenida/>} />
               <Route path="/perfiles" element={<Contenido/>} />

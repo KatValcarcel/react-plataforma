@@ -97,7 +97,7 @@ export default function BarraLateral() {
         </Link>
 
         <Link
-          to="/"
+          to="/envios"
           style={{ textDecoration: "none" }}
           className="list-group-item list-group-item-action"
         >

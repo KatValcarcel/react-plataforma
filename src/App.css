@@ -338,3 +338,60 @@
 .barsit{
   background-color: #c5e3f6;
 }
+
+/* css de Katerine */
+.rs-picker-daterange-menu {
+  z-index: 9999 !important; /*added a random number*/
+  /* top: 14vw !important;
+  left: 33vw !important; */
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.rs-icon:hover {
+  color: #f28705;
+}
+.user {
+  font-size: 2em;
+}
+.btn-orange {
+  color: #fff;
+  background: #f28705;
+  text-decoration: none;
+  font-size: 2em;
+  width: 45px;
+  height: 45px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-orange {
+  color: #f28705;
+  font-size: 1.6em;
+  margin-right: 10px;
+}
+.lupa {
+  font-size: 1.2em;
+}
+.cerrar {
+  font-size: 2em;
+}
+.table {
+  margin: 20px;
+}
+.boton {
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-delete {
+  background-color: rgb(201, 6, 6);
+}
+.btn-update {
+  background-color: DodgerBlue;
+}
