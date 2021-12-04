@@ -45,7 +45,7 @@ const NuevoProceso = () => {
       console.log(value);
       await CreateProceso(value);
       // closeModal();
-      // window.location.replace("");
+      window.location.replace("");
     } catch (error) {
       throw error;
     }
