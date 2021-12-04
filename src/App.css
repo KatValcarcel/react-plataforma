@@ -1,22 +1,22 @@
 /* #root{
   height: 100vh;
 } */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 100vw;
   max-height: 100vh;
 }
-.contenedordeinicio{
+.contenedordeinicio {
   display: flex;
   flex-direction: row;
 }
-.contenedor-plataforma{
+.contenedor-plataforma {
   display: grid;
   height: 100vh;
 }
-.botoninicio{
+.botoninicio {
   width: 200px;
   height: 80px;
 }
@@ -24,263 +24,248 @@
   display: grid;
   height: calc("100vh - 60px") ;
 } */
-.contenedortotal{
+.contenedortotal {
   height: calc("100vh - 60px");
 }
 
-.barralateral{
+.barralateral {
   display: grid;
-  max-height: calc("100vh - 60px") ;
+  max-height: calc("100vh - 60px");
 }
-.logo{
+.logo {
   height: 60px;
   margin: 10px 0 0 10px;
 }
-.tituloIntro{
+.tituloIntro {
   text-align: center;
-    padding: 50px;
-    color: #F28705;
+  padding: 50px;
+  color: #f28705;
 }
-.psicolab{
-    color:white;
-    background-color: #F28705;
-    border-color: #F28705;
-    margin:20px auto;
-    border-radius:10px;
-    padding: 10px 15px;
-    border:0;
-    font-size: 20px;
+.psicolab {
+  color: white;
+  background-color: #f28705;
+  border-color: #f28705;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 0;
+  font-size: 20px;
 }
-.clima{
-    color:white;
-    background-color: #F28705;
-    border-color: #F28705;
-    margin:20px auto;
-    border-radius:10px;
-    padding: 10px 15px;
-    border:0;
-    font-size: 20px;
+.clima {
+  color: white;
+  background-color: #f28705;
+  border-color: #f28705;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 0;
+  font-size: 20px;
 }
-.card-text{
+.card-text {
   height: 220px;
 }
 
-
-.moduloIntro{
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    border-radius: 20px;
-    transition: transform .2s;
-    width: 300px;
+.moduloIntro {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  border-radius: 20px;
+  transition: transform 0.2s;
+  width: 300px;
 }
-.moduloIntro:hover{
+.moduloIntro:hover {
   transform: scale(1.1);
 }
-.containerintro{
+.containerintro {
   display: flex;
   justify-content: space-around;
 }
 
-
-.navbar{
-  background-color: #0597F2;
+.navbar {
+  background-color: #0597f2;
   height: 60px;
   /* width: 100vw; */
 }
-.input-group{
+.input-group {
   margin-right: 120px;
-  
 }
-.col-auto{
+.col-auto {
   margin-right: 15px;
 }
-.form-control{
+.form-control {
   height: 35px;
   margin-bottom: 10px;
 }
-.list-group-item.list-group-item-action{
-  background-color: #0597F2;
+.list-group-item.list-group-item-action {
+  background-color: #0597f2;
   color: white;
 }
 
-
-
-.cargas{
+.cargas {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-
 }
-.iconcarga{
+.iconcarga {
   margin-left: 5px;
-  color: #F28705;
+  color: #f28705;
 }
-.iconcarga1{
+.iconcarga1 {
   margin-left: 5px;
-  color: #F28705;
+  color: #f28705;
   border: 0;
   background-color: white;
-  
 }
-.list-group-item-action:focus{
-  color: #F28705 !important;
+.list-group-item-action:focus {
+  color: #f28705 !important;
 }
-.list-group-item-action:hover{
-  color: #F28705 !important;
+.list-group-item-action:hover {
+  color: #f28705 !important;
 }
 
-.iconcarga2{
+.iconcarga2 {
   margin-left: 5px;
-  color: #F28705;
+  color: #f28705;
 }
-.texto{
+.texto {
   font-size: 18px;
-  color: #F28705;
+  color: #f28705;
   padding: 0;
 }
-.cargamasiva{
+.cargamasiva {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
-.agregarcargo{
+.agregarcargo {
   margin-top: 20px;
 }
 
-.textosituacion{
+.textosituacion {
   display: flex;
   flex-direction: row;
 }
-.form-check-label{
+.form-check-label {
   margin-right: 10px;
 }
-.form-check-label:nth-child(2){
+.form-check-label:nth-child(2) {
   margin-left: 5px;
 }
-.boditablalistapruebas{
+.boditablalistapruebas {
   padding: 2px 0 !important;
   /* margin: 0 !important; */
 }
-.tbody{
+.tbody {
   font-size: 14px;
-  
 }
 
-.botoncargamasiva{
-
+.botoncargamasiva {
   border: 0;
   background-color: #fff;
 }
 
-.modal{
+.modal {
   position: fixed;
   z-index: 999;
   top: 1rem;
   left: 1rem;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(0, 0, 0, 0.75);
   display: none;
   justify-content: center;
   align-items: center;
-  
 }
-.icondoc{
+.icondoc {
   width: 25px;
-  color: #F28705;
+  color: #f28705;
 }
-.iconsubir{
-  color: #F28705;
+.iconsubir {
+  color: #f28705;
 }
 /* Esto hay que revisarlo para ver el ancho del modal */
-.modalcontainereditar{
-  position: relative;   
-  width: 30%;                  
+.modalcontainereditar {
+  position: relative;
+  width: 30%;
   background-color: #fff;
   border-radius: 5px;
 }
-.espacioprueba{
+.espacioprueba {
   padding-left: 5px;
 }
-.editarboton{
+.editarboton {
   height: 27px;
 }
-.editartexto{
+.editartexto {
   font-size: 10px;
 }
 
-.modal.is-open{
+.modal.is-open {
   display: flex;
 }
-.modal-container{
-  position: relative;   
+.modal-container {
+  position: relative;
   width: 400px;
   background-color: #fff;
   border-radius: 5px;
-  
 }
-.modal-close{
+.modal-close {
   border: 0;
   background-color: #fff;
   position: absolute;
-  top: .5rem;
+  top: 0.5rem;
   right: 1rem;
 }
 
-.iconCerrar{
+.iconCerrar {
   color: #fff;
   border: 0;
-  background-color: #F28705;
+  background-color: #f28705;
 }
-.modal-header{
+.modal-header {
   display: flex;
   color: white;
   height: 50px;
-  background-color: #F28705;
+  background-color: #f28705;
 }
-.modal-body{
+.modal-body {
   padding: 0;
   margin-top: 0;
 }
-.toast-body{
+.toast-body {
   border: 1px dashed;
   padding: 100px;
   background-color: hsla(0, 6%, 94%, 0.842);
 }
-.textocuerpo2{
+.textocuerpo2 {
   display: flex;
   font-size: 10px;
   margin-top: 5px;
   align-items: center;
 }
-.iconExcel{
+.iconExcel {
   margin-left: 10px;
   color: green;
 }
-.textocuerpo1{
- font-size: 14px;
- 
+.textocuerpo1 {
+  font-size: 14px;
 }
-.form-check-input[type=checkbox]{
+.form-check-input[type="checkbox"] {
   width: 1.4em;
   height: 1.4em;
-  
-  
 }
-.form-check-input:checked{
-  background-color: #F28705 !important; 
-  border-color: #F28705 !important; 
+.form-check-input:checked {
+  background-color: #f28705 !important;
+  border-color: #f28705 !important;
 }
-.btn-secondary{
+.btn-secondary {
   position: absolute;
   bottom: 31px;
   left: 190px;
 }
-
 
 /* Inicio de CSS de DISC */
 .wrappe {
@@ -298,24 +283,23 @@
   background-color: green;
   grid-column: 1/2;
   grid-row: 1;
-  
 }
-.titulo{
+.titulo {
   width: 130px;
   height: 10px;
 }
 .inputprueba {
- justify-self: center;
+  justify-self: center;
 }
 .dos {
   background-color: skyblue;
   grid-column: 2/3;
-  grid-row: 1 ;
+  grid-row: 1;
 }
 .tres {
   background-color: red;
   grid-column: 3/4;
-  grid-row: 1 ;
+  grid-row: 1;
 }
 .cuatro {
   background-color: yellow;
@@ -328,22 +312,17 @@
   grid-row: 2;
 }
 
-
-
 /* Inicio de Preguntas BARSIT */
-.preguntasbarsit{
+.preguntasbarsit {
   margin: 20px 0 0 0;
- 
 }
-.barsit{
+.barsit {
   background-color: #c5e3f6;
 }
 
-/* css de Katerine */
+/* css de Katherine */
 .rs-picker-daterange-menu {
   z-index: 9999 !important; /*added a random number*/
-  /* top: 14vw !important;
-  left: 33vw !important; */
   position: fixed !important;
   top: 50% !important;
   left: 50% !important;

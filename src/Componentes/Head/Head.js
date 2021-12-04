@@ -1,10 +1,8 @@
 import React from "react";
-
+import { FaUserCircle } from "react-icons/fa";
 
 export default function Head() {
-   
   return (
-
     <nav className="navbar navbar-expand-lg navbar-dark col-12">
       <div className="container-fluid">
         {/* BOTON OFFCANVAS */}
@@ -18,10 +16,9 @@ export default function Head() {
           <span className="navbar-toggler-icon" />
         </button>
 
-
         {/* END BOTON OFFCANVAS */}
         <a className="navbar-brand me-auto" href="./index.html">
-            <img className="logo" src="/img/logo.png" alt="" />
+          <img className="logo" src="/img/logo.png" alt="" />
         </a>
         <button
           className="navbar-toggler"
@@ -35,8 +32,6 @@ export default function Head() {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-
-
           {/* USUARIO Y CONTRASEÑA*/}
           <form className="d-flex ms-auto">
             <div className="input-group my-3 my-lg-0">
@@ -65,14 +60,12 @@ export default function Head() {
             </div>
           </form>
 
-
           {/* MENSAJE */}
           <ul className="navbar-nav mb-2 mb-lg-0">
             <a href="/">
               <i className=" icon-navbar bi bi-envelope-fill text-white" />
             </a>
           </ul>
-
 
           {/* SESION */}
           <ul className="navbar-nav mb-2 mb-lg-0">
@@ -85,7 +78,7 @@ export default function Head() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i className="icon-navbar bi bi-person-fill text-white" />
+                <FaUserCircle className="user" />
               </a>
               <ul
                 className="dropdown-menu dropdown-menu-end"

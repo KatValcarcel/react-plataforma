@@ -8,12 +8,12 @@ import { CreateProceso } from "../Services/ProcesoService";
 const NuevoProceso = () => {
   const [isOpenModal, openModal, closeModal] = UseModal(false);
 
+  const [fechas, setFechas] = useState([new Date(), new Date()]);
   const [value, setValue] = useState({
     Nombre: "",
     Descripcion: "",
-    Fechas: [new Date(), new Date()],
-    // FechaInicio: "",
-    // FechaFin: "",
+    FechaInicio: "",
+    FechaFin: "",
     Perfil: "",
     Oculto: false,
   });
@@ -29,13 +29,23 @@ const NuevoProceso = () => {
       [e.target.name]: e.target.checked,
     });
   };
-
+  const guardarFechas = () => {
+    const [inicio, fin] = fechas;
+    setValue({
+      ...value,
+      FechaInicio: inicio.getTime(),
+      FechaFin: fin.getTime(),
+    });
+  };
   const submit = async (e) => {
-    console.log(e);
+    // console.log(e);
     e.preventDefault();
     try {
+      guardarFechas();
+      console.log(value);
       await CreateProceso(value);
-      closeModal();
+      // closeModal();
+      // window.location.replace("");
     } catch (error) {
       throw error;
     }
@@ -50,9 +60,14 @@ const NuevoProceso = () => {
       </div>
       <Modal isOpen={isOpenModal} closeModal={closeModal}>
         <h5 className="modal-header">Nuevo Proceso</h5>
-        <FormProceso value={value} actualizarInput={actualizarInput} actualizarCheck={actualizarCheck} submit={submit} />
-        <div className="modal-footer">
-        </div>
+        <FormProceso
+          value={value}
+          actualizarInput={actualizarInput}
+          actualizarCheck={actualizarCheck}
+          setFechas={setFechas}
+          submit={submit}
+        />
+        <div className="modal-footer"></div>
       </Modal>
     </div>
   );
